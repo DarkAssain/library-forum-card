@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Card Portal</title>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to <strong>LibSearch.id</strong></h1>
+        <p>A website used to borrow books from the library</p>
+    </header>
+
+    <main>  
+        <section class="rules-section">
+            <h2>Library Rules & Policies</h2>
+            <ul>
+                <li>An Active Membership is used for borrowing Physical and Digital books.</li>
+                <li>For Standard Access you have to return a book within 14 days or less.</li>
+                <li>You are RESPONSIBLE for your own borrowed books within the library, any damages will be charged on YOUR account.</li>
+                <li>Respect the book, and do NOT damage any borrowed books.</li>
+            </ul>
+        </section>
+
+        <section class="mechanics-section">
+            <h2>How Membership Works</h2>
+            <ol>
+                <li>Registration: Complete the digital application form using verified credentials.</li>
+                <li>Verification: System validates your application status against institutional records.</li>
+                <li>Issuance: Receive your unique digital library identification barcode and account profile.</li>
+            </ol>
+        </section>
+
+        <section class="action-section">
+            <button id="register-btn" type="button">Register for Library Card</button>
+        </section>
+
+        <form id="registration-form" style="display: none; margin-top: 30px;">
+            <h3>Application Form</h3>
+            <p>Please fill out the form below.</p>
+            
+            <div style="margin-bottom: 12px;">
+                <label for="fullname">Full Name:</label><br>
+                <input type="text" id="fullname" name="fullname" required placeholder="John Doe">
+            </div>
+
+            <div style="margin-bottom: 12px;">
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" name="username" required placeholder="johndoe_99">
+            </div>
+
+            <div style="margin-bottom: 12px;">
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" required placeholder="john@example.com">
+            </div>
+
+            <div style="margin-bottom: 12px;">
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" placeholder="08123456789">
+            </div>
+
+            <div style="margin-bottom: 12px;">
+                <label for="membership-type">Membership Tier:</label><br>
+                <select id="membership-type" name="membership_type">
+                    <option value="student">Student Pass</option>
+                    <option value="standard">Standard Access</option>
+                    <option value="researcher">Premium Tier</option>
+                </select>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <script src="LIBRARYCARDJS.JS"></script>
+    <link rel="stylesheet" href="LIBRARYCSS.css">
+</body>
+</html>
